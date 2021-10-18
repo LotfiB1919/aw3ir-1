@@ -1,33 +1,75 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TP2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+
+    
+    <link rel="stylesheet" href="tp2.css">
+</head>
+
+<body>
+   <img src=cuis 
+
+    <br />
+    <form id="formulaire" onsubmit="validation()">
+        <h1>Saisie d'une fiche "Personne"</h1>
+
+        <p>
+            <label for="Nom">Nom</label> 
+            <input type="text" name="Nom" id="Nom" placeholder="Ex : mriss" size="30" minlength="5" maxlength="20"
+                class="special" />
+        </p>
+        <p>
+            <label for="Prénom">Prénom</label> 
+            <input type="text" name="Prénom" id="Prénom" placeholder="Ex : nouha" size="30" minlength="5" maxlength="20"
+                class="special" />
+        </p>
+        <p>
+            <label for="Date">Date de naissance</label> 
+            <input type="date" name="Date" id="Date" class="special" />
+        </p>
+        <p>
+            <label for="Catégorie">Catégorie</label> 
+            <select name="Catégorie" id="Catégorie">
+                <option value="Adulte">Adulte</option>
+                <option value="Mineur">Mineur</option>
+            </select>
+        </p>
+        <p>
+            <label for="Adresse">Adresse</label> 
+            <input type="text" name="Adresse" id="Adresse" size="30" minlength="5" maxlength="50" class="special" />
+        </p>
+        <p>
+            <label for="E-mail">E-mail</label> 
+            <input type="email" name="E-mail" id="E-mail" placeholder="Ex : llllll99@.fr" size="30" minlength="5"
+                maxlength="30" class="special" />
+        </p>
+
+        <br />
+
+        <div class="button">
+            <button type="submit" onclick="validation()">Valider</button>
+        </div>
+
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+
+    </form>
+
+    <div id="error">
+    </div>
+    <br />
+    <div id="Resultat">
+    </div>
+</body>
+
+<script src="tp2.js">
+
+</script>
+
 </html>
